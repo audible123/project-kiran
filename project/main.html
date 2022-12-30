@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="transition animation.css">
+</head>
+
+<body>
+
+    <div id="preloader">
+    </div>
+    <section id="banner">
+        <img src="" alt="" class="logo">
+        <div class="banner-text">
+            <h1>किरण</h1>
+            <p>A Non Profit Website For Women Welfare.</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a> </li>
+                <li><a href="#">FEATURES</a> </li>
+                <li><a href="#">TUTORIAL</a> </li>
+                <li><a href="#">BE A PART</a> </li>
+                <li><a href="#">ABOUT US</a> </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="menuBtn">
+        <img src="menu.png" id="denu">
+    </div>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("denu")
+
+        sideNav.style.right ="-250px";
+
+        menuBtn.onclick=function() {
+            if (sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src="close.png";
+            }
+            else {
+                sideNav.style.right="-250px";
+                menu.src="menu.png";
+        }
+    }
+    </script>
+
+
+
+<script>
+    var loader=document.getElementById("preloader");
+    window.addEventListener("load",function(){
+        loader.style.display="none";
+    })
+</script>
+
+</body>
+
+
+</html>

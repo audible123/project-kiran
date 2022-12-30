@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="search_section.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="topheader">
+            <div class="inputbox">
+                <input type="search" placeholder="Search Now" id="SearchInput">
+                <div class="SearchIcon">
+                    <i class="fa fa-search"></i>
+                </div>
+                <ul class="SearchResult" id="SearchResult">
+                    <li class="fa-search"><a href="#">Lorem, ipsum dolor.</a></li>
+                    <li class="fa-search"><a href="#">Lorem, ipsum dolor.</a></li>
+                    <li class="fa-search"><a href="#">Lorem, ipsum dolor.</a></li>
+                    <li class="fa-search"><a href="#">Lorem, ipsum dolor.</a></li>
+                    <li class="fa-search"><a href="#">Lorem, ipsum dolor.</a></li>
+                    <li class="fa-search"><a href="#">Lorem, ipsum dolor.</a></li>
+                    <li class="fa-search"><a href="#">Lorem, ipsum dolor.</a></li>
+                    <li class="fa-search"><a href="#">Lorem, ipsum dolor.</a></li>
+                    <li class="fa-search"><a href="#">Lorem, ipsum dolor.</a></li>
+                    <li class="fa-search"><a href="#">Lorem, ipsum dolor.</a></li>
+                    <li class="fa-search"><a href="#">Lorem, ipsum dolor.</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="wrapper">
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <!-- <li><a href="#">HOME</a> </li>
+                <li><a href="#">FEATURES</a> </li>
+                <li><a href="#">TUTORIAL</a> </li>
+                <li><a href="#">BE A PART</a> </li>
+                <li><a href="#">ABOUT US</a> </li> -->
+                    <div class="title">
+                        <br>
+                    </div>
+                    <div class="form">
+                        <div class="inputfield">
+                            <label>Surname</label>
+                            <input type="text" class="input">
+                        </div>
+                        <div class="inputfield">
+                            <label>Educational Qualification</label>
+                            <div class="custom_select">
+                                <select>
+                                    <option value="">Select</option>
+                                    <option value="Prematric">Prematric</option>
+                                    <option value="Postmatric">Postmatric</option>
+                                    <option value="Postmatric Other then Inter">Postmatric Other then Inter</option>
+                                    <option value="Graduate">Graduate</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="inputfield">
+                            <label>Family Yearly Income</label>
+                            <input type="text" class="input">
+                        </div>
+                        <div class="inputfield">
+                            <label>Caste</label>
+                            <input type="text" class="input">
+                        </div>
+                        <div class="inputfield">
+                            <label>Gender</label>
+                            <div class="custom_select">
+                                <select>
+                                    <option value="">Select</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="inputfield">
+                            <label>Religion</label>
+                            <input type="text" class="input">
+                        </div>
+
+                        <!-- <div class="inputfield">
+                            <label>Phone Number</label>
+                            <input type="text" class="input">
+                         </div>  -->
+                        <div class="inputfield">
+                            <label>Disability</label>
+                            <div class="custom_select">
+                                <select>
+                                    <option value="">Select</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- <div class="inputfield">
+                            <label>Address</label>
+                            <textarea class="textarea"></textarea>
+                         </div>  -->
+                        <div class="inputfield">
+                            <label>Postal Code</label>
+                            <input type="text" class="input">
+                        </div>
+                        <div class="inputfield">
+                            <label>Sub Category</label>
+                            <div class="custom_select">
+                                <select>
+                                    <option value="">Select</option>
+                                    <option value="">Agniveerangni</option>
+                                    <option value="">Sports Quota</option>
+                                    <option value="">Freedom fighter</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="inputfield">
+                            <input type="submit" value="APPLY" class="btn">
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            var earchResult = document.getElementById("SearchResult");
+            document.onclick = function (event) {
+                if (event.target.id !== `SearchResult`) {
+                    SearchResult.style.display = "block";
+                }
+                if (event.target.id !== `SearchInput`) {
+                    SearchResult.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
