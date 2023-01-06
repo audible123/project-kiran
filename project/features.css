@@ -7,8 +7,8 @@
 
 body {
     background: linear-gradient(45Deg, rgba(238, 195, 95, 0.5), black), url(a.gif);
-    height: 100vh;
     background-position: center;
+    background-attachment: fixed;
   }
 
 section {
