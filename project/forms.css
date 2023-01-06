@@ -95,8 +95,12 @@ form .action input{
 }
 
 form .action input[type="submit"]{
-  background: white;
+  background: rgb(165, 106, 42);
   color: black;
+}
+
+form .action input[type="submit"]:hover {
+  background: #b58b3e;
 }
 
 form .icons a{
